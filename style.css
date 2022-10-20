@@ -41,7 +41,8 @@ body {
 
 .menulink {
   text-decoration: none;
-  color: #0e0945;
+  color: white;
+  font-weight: bold;
 }
 
 .panel {
@@ -66,6 +67,11 @@ body {
   flex-direction: column;
 }
 
+.campanhalink {
+  color: white;
+  text-decoration: none;
+}
+
 .panelrow {
   width: 100%;
   display: flex;
@@ -86,6 +92,10 @@ body {
   flex-direction: column;
   align-items: center;
   margin-top: 10px;
+}
+
+.panelsub-row {
+  flex-direction: row;
 }
 
 .paneltag,
