@@ -14,7 +14,7 @@ const atual = 0;
 const estado = `SORTEADO AOS 50%`;
 const cidade = `SORTEADO AOS 100%`;
 const sorteado = `A SER SORTEADO`;
-const doadores = [`Lista de Doadores:`];
+const doadores = [];
 
 const percentage = (atual / meta) * 100;
 let i = 0;
@@ -34,11 +34,17 @@ function setPage() {
   panelCidadeEl.textContent = cidade;
   panelSorteadoEl.textContent = sorteado;
 
-  doadores.forEach(function (doador, i) {
+  if (doadores.length > 0) {
+    doadores.forEach(function (doador, i) {
+      const htmlCode = `
+        <div class="doador">${doador} doou 1 PIX</div>`;
+      panelDoadoresEl.insertAdjacentHTML(`beforeend`, htmlCode);
+    });
+  } else {
     const htmlCode = `
-    <div class="doador">${doador} doou 1 PIX</div>`;
+        <div class="doador">Lista de Doadores:`;
     panelDoadoresEl.insertAdjacentHTML(`beforeend`, htmlCode);
-  });
+  }
 
   const intervalSlide = setInterval(slide, 120);
 }
