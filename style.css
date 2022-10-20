@@ -41,8 +41,7 @@ body {
 
 .menulink {
   text-decoration: none;
-  color: white;
-  font-weight: bold;
+  color: #0e0945;
 }
 
 .panel {
@@ -161,6 +160,22 @@ p {
 
 .piximg {
   width: 70%;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconsitem {
+  color: #0e0945;
+  margin: 5px 30px;
+  transition: all 0.2s linear;
+}
+
+.iconsitem:hover {
+  color: #5a88e0;
 }
 
 @media only screen and (min-width: 1000px) {
