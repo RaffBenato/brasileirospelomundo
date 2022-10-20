@@ -9,7 +9,7 @@ const panelDoadoresEl = document.querySelector(`.paneldoadores`);
 const sliderNumberEl = document.querySelector(`.slidernumber`);
 const sliderCoverEl = document.querySelector(`.slidercover`);
 
-const meta = 200;
+const meta = 100;
 const atual = 0;
 const estado = `SORTEADO AOS 50%`;
 const cidade = `SORTEADO AOS 100%`;
