@@ -10,16 +10,11 @@ const sliderNumberEl = document.querySelector(`.slidernumber`);
 const sliderCoverEl = document.querySelector(`.slidercover`);
 
 const meta = 200;
-const atual = 100;
+const atual = 0;
 const estado = `SORTEADO AOS 50%`;
 const cidade = `SORTEADO AOS 100%`;
 const sorteado = `A SER SORTEADO`;
-const doadores = [
-  `Rafael Benato`,
-  `Leo Benato`,
-  `Magda Benato`,
-  `Antonio Tadeu`,
-];
+const doadores = [`Lista de Doadores:`];
 
 const percentage = (atual / meta) * 100;
 let i = 0;
