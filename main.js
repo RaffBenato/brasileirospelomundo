@@ -10,11 +10,17 @@ const sliderNumberEl = document.querySelector(`.slidernumber`);
 const sliderCoverEl = document.querySelector(`.slidercover`);
 
 const meta = 100;
-const atual = 0;
+const atual = 5;
 const estado = `SORTEADO AOS 50%`;
-const cidade = `SORTEADO AOS 100%`;
-const sorteado = `A SER SORTEADO`;
-const doadores = [];
+const cidade = `SORTEADO AOS 75%`;
+const sorteado = `SORTEADO AOS 100%`;
+const doadores = [
+  `Marcelo Dourado`,
+  `Carlos de Caldas`,
+  `Carlos de Caldas`,
+  `Rita Fatima`,
+  `Gustavo Prates`,
+];
 
 const percentage = (atual / meta) * 100;
 let i = 0;
@@ -38,12 +44,12 @@ function setPage() {
     doadores.forEach(function (doador, i) {
       const htmlCode = `
         <div class="doador">${doador} doou 1 PIX</div>`;
-      panelDoadoresEl.insertAdjacentHTML(`beforeend`, htmlCode);
+      panelDoadoresEl.insertAdjacentHTML(`afterbegin`, htmlCode);
     });
   } else {
     const htmlCode = `
         <div class="doador">Lista de Doadores:`;
-    panelDoadoresEl.insertAdjacentHTML(`beforeend`, htmlCode);
+    panelDoadoresEl.insertAdjacentHTML(`afterbegin`, htmlCode);
   }
 
   const intervalSlide = setInterval(slide, 120);
